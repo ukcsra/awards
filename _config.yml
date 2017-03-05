@@ -6,7 +6,7 @@ description: ""
 keywords: ""
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "//awards.civilservice.lgbt"
+url: "//civilservice.lgbt/awards/"
 author: "Civil Service Rainbow Alliance"
 logo: "/logo.png"
 
