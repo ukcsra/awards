@@ -37,7 +37,7 @@ layout: default
 
 								<div class="card {{ index.which }}">
 									<div class="card-block">
-										<p class="h1 card-title"><a href="{{ index.url }}">{{ index.display }}</a></p>
+										<p class="h1 card-title"><a href="{{ index.url | prepend: site.baseurl | prepend: site.url }}">{{ index.display }}</a></p>
 									</div>
 							    </div>
 
