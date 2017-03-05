@@ -5,8 +5,8 @@ title: Civil Service LGBT Impact Index
 description: ""
 keywords: ""
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "//civilservice.lgbt/awards/"
+baseurl: "/awards" # the subpath of your site, e.g. /blog
+url: "//civilservice.lgbt"
 author: "Civil Service Rainbow Alliance"
 logo: "/logo.png"
 
