@@ -23,6 +23,7 @@ window.setInterval(function() {
     $('#nominateNow').hide();
     $('#nominateNowHeader').hide();
   } else if (current.getTime() > endDate.getTime()) {
+    $('#nominateNow').hide();
     $('#nominateNowHeader').hide();
   }
 
