@@ -1,0 +1,17 @@
+@mixin text-outline($thickness) {
+	color: $body-color;
+	background: transparent;
+	text-stroke: $thickness $body-color;
+	text-fill-color: $body-bg;
+	-webkit-text-stroke: $thickness $body-color;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin text-outline-inverse {
+	color: $body-color;
+	background: transparent;
+	text-stroke: 0px $body-color;
+	text-fill-color: $body-color;
+	-webkit-text-stroke: 0px $body-color;
+	-webkit-text-fill-color: $body-color;
+}

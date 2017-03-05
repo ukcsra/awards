@@ -1,0 +1,49 @@
+# Site settings
+
+title: Civil Service LGBT Impact Index
+
+description: ""
+keywords: ""
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "//awards.civilservice.lgbt"
+author: "Civil Service Rainbow Alliance"
+logo: "/logo.png"
+
+asset-path: "/assets"
+image-path: "/images"
+image-2x-path: "/images/@2x"
+
+# Social settings
+facebook-id: "" # For Facebook OpenGraph integration
+facebook-slug: "ukcsra" # Automatically pre-pends http://facebook.com/
+twitter-username: "ukcsra" # Twitter handle i.e. joebloggs
+github-username:  "ukcsra"
+google-site-verification: "" # GSV code; proves domain ownership
+
+# Analytics
+disable-analytics: true # Switch to "false" to start GA logging
+google-analytics: "" # GA ID code
+
+# Collections
+collections:
+  indices:
+    output: true
+    permalink: /indices/:path/
+    defaults:
+      values:
+        layout: page
+
+# Plugins and build settings
+
+permalink: pretty
+markdown: kramdown
+future: false
+sass:
+    sass_dir: _sass
+    sourcemap: true
+
+gems:
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-redirect-from

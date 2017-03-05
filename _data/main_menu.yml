@@ -1,0 +1,12 @@
+- slug: 'home'
+  name: 'Home'
+  default-class: 'is-active'
+  description: 'Go home'
+
+- slug: 'about'
+  name: 'About'
+  description: 'Find out more about the Indices and the awards'
+
+- slug: 'nominate'
+  name: 'Nominate now'
+  description: 'Submit a nomination to the Impact Indices'
