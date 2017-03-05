@@ -5,6 +5,8 @@ nav {
 
 	margin: 0 0 2rem 0;
 
+	@include text-outline(2px);
+
 	a {
 		text-decoration: none;
 		margin: 1rem;
@@ -16,23 +18,24 @@ nav {
 		width: auto;
 
 		line-height: 2rem;
-		font-size: 1.5rem;
-		font-weight: 600;
+		font-size: 2rem;
+		font-weight: 700;
 		text-transform: uppercase;
 
 		&:hover, &:focus {
 			text-decoration: none !important;
+			@include text-outline-inverse;
 		}
 
 		&:before {
-			width: 1.5rem;
+			width: 2rem;
 			height: 2rem;
 
 			position: relative; // was position: absolute;
 			display: block;
 			float: left;
 
-			font-size: 1.5rem;
+			font-size: 2rem;
 			line-height: 2rem;
 
 			z-index: 10000 !important;

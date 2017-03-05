@@ -81,6 +81,10 @@ div#home {
 				z-index: 100000 !important;
 
 				@include text-outline(2px);
+
+				&:hover, &:focus {
+					@include text-outline-inverse;
+				}
 			}
 
 			img.logo {

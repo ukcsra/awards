@@ -2,4 +2,76 @@
 layout: default
 ---
 
-{{ content }}
+<div id="page">
+
+	<div id="header">
+
+		<div class="container">
+
+			<h1> {{ page.display }} </h1>
+			<p id="nominateNowHeader" class="lead">Nominations open. <a href="{{ '/nominate' | prepend: site.baseurl | prepend: site.url }}" title="Nominate a person, network or team for the Index now">Nominate now</a>.</p>
+
+			<a class="arrow-down" href="#content" title="Skip to content"><span class="sr-only">Skip to content</span></a>
+
+		</div>
+
+	</div>
+
+	<div id="content">
+
+		<main>
+
+			<div class="container">
+
+				<div class="row flex-items-xs-center">
+
+					<div class="col-xs-12 col-md-8 col-lg-8">
+
+						<div id="nominateNow" class="card second">
+							<div class="card-block">
+								<p class="h1 display-3 card-title"><a href="{{ '/nominate' | prepend: site.baseurl | prepend: site.url }}" title="Nominate a person, network or team for the Index now">Nominate now</a></p>
+							</div>
+					    </div>
+
+						{% if page.video != "" %}
+					    <div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="{{ 'https://www.youtube.com/embed/' | append: page.video }}" allowfullscreen></iframe>
+						</div>
+						{% endif %}
+
+						{{ content }}
+
+					</div>
+
+					<div class="col-xs-12 col-md-12 col-lg-4">
+
+						<div class="row">
+
+							{% for index in site.indices %}
+
+							<div class="col-md-6 col-lg-12">
+
+
+								<div class="card {{ index.which }} card-small">
+									<div class="card-block">
+										<p class="h1 card-title"><a href="{{ index.url | prepend: site.baseurl | prepend: site.url }}">{{ index.display }}</a></p>
+									</div>
+							    </div>
+
+							</div>
+
+
+						    {% endfor %}
+
+						</div>
+
+					</div>
+
+			</div>
+
+		</main>
+
+	</div>
+
+</div>
+

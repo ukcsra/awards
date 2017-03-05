@@ -1,6 +1,11 @@
 .card {
 
 	min-height: 250px;
+	padding: 1rem;
+
+	&.card-small {
+		min-height: 175px !important;
+	}
 
 	&.first {
 		background: #2b8cc4; /* Old browsers */
@@ -36,6 +41,7 @@
 .card-block {
   @include clearfix;
   padding: $card-spacer-x;
+  padding-left: 0;
 }
 
 .card-title {
