@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/indices/allies/</loc>
-<lastmod>2017-03-05T15:23:00+00:00</lastmod>
+<loc>http://localhost:4000/awards/indices/allies/</loc>
+<lastmod>2017-03-05T15:31:35+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/indices/lgbt-civil-servants/</loc>
-<lastmod>2017-03-05T15:23:00+00:00</lastmod>
+<loc>http://localhost:4000/awards/indices/lgbt-civil-servants/</loc>
+<lastmod>2017-03-05T15:31:35+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/indices/networks/</loc>
-<lastmod>2017-03-05T15:23:00+00:00</lastmod>
+<loc>http://localhost:4000/awards/indices/networks/</loc>
+<lastmod>2017-03-05T15:31:35+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/indices/teams/</loc>
-<lastmod>2017-03-05T15:23:00+00:00</lastmod>
+<loc>http://localhost:4000/awards/indices/teams/</loc>
+<lastmod>2017-03-05T15:31:35+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/404.html</loc>
+<loc>http://localhost:4000/awards/404.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>http://localhost:4000/awards/</loc>
 </url>
 </urlset>
