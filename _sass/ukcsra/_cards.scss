@@ -69,6 +69,17 @@
 
 }
 
+
+
+/* Microsoft Edge Browser 12+ (All) - @supports method */
+
+@supports (-ms-ime-align:auto) {
+	.card-title {
+		-webkit-text-stroke: none;
+		-webkit-text-fill-color: rgba(255,255,255,0.5);
+	}
+}
+
 .card-subtitle {
   margin-top: -($card-spacer-y / 2);
   margin-bottom: 0;
