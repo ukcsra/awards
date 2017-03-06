@@ -65,7 +65,7 @@ div#home {
 
 			/* Microsoft Edge Browser 12+ (All) - @supports method */
 
-			@supports (-webkit-appearance:none) {
+			@supports (-ms-ime-align:auto) {
 				h1 {
 					-webkit-text-stroke: none;
 					-webkit-text-fill-color: rgba(255,255,255,0.5);
