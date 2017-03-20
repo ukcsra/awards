@@ -44,3 +44,13 @@ nav {
 	}
 
 }
+
+
+/* Microsoft Edge Browser 12+ (All) - @supports method */
+
+@supports (-ms-ime-align:auto) {
+	nav {
+		-webkit-text-stroke: none;
+		-webkit-text-fill-color: rgba(255,255,255,0.5);
+	}
+}
