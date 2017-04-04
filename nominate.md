@@ -8,12 +8,9 @@ display: "<span class='text-fill'>Nominate</span> now"
 
 Nominations will open on <time datetime="2017-03-31 10:00">31 March 2017</time>.
 
-Nominations will close at midnight on <time datetime="2017-04-01 23:59">1 May 2017</time>
+Nominations will close at midnight on <time datetime="2017-04-01 23:59">1 May 2017</time>.
 
 Nominations are open to anyone working in the UK Civil Service, or a Crown body. You can nominate yourself or someone else to be part of the Index.
-
-<a href="https://ukcsra.typeform.com/to/r2M2Mh" class="btn btn-lg btn-danger" target="_blank">Start your nomination</a>
-
 
 ----
 
@@ -29,7 +26,7 @@ A mixture of senior civil servant and LGBT sector leaders will be judging the no
 
 ### Time
 
-This nomination will take up to 15 minutes to complete. You must complete the nomination in one sitting: unfortunately this form doesn't save nominations until you click "Submit" at the end.
+This nomination will probably take around 15-30 minutes to complete. You must complete the nomination in one sitting: unfortunately this form doesn't save nominations until you click "Submit" at the end.
 
 ### Only write things you are OK with being made public
 

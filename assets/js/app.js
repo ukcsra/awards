@@ -10,21 +10,3 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
-
-
-
-window.setInterval(function() {
-
-  var current = new Date();
-  var startDate = new Date('2017-03-31T10:00:00.000-08:00')
-  var endDate = new Date('2017-04-01T23:59:00:00.000-08:00')
-
-  if (current.getTime() < startDate.getTime()) {
-    $('#nominateNow').hide();
-    $('#nominateNowHeader').hide();
-  } else if (current.getTime() > endDate.getTime()) {
-    $('#nominateNow').hide();
-    $('#nominateNowHeader').hide();
-  }
-
-}, 0);
