@@ -6,9 +6,7 @@ display: "<span class='text-fill'>Nominate</span> now"
 
 # {{ page.title }}
 
-Nominations will open on <time datetime="2017-03-31 10:00">31 March 2017</time>.
-
-Nominations will close at midnight on <time datetime="2017-04-01 23:59">1 May 2017</time>.
+Nominations will close at midnight on <time datetime="2017-04-01 23:59">15 May 2017</time>.
 
 Nominations are open to anyone working in the UK Civil Service, or a Crown body. You can nominate yourself or someone else to be part of the Index.
 
