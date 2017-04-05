@@ -10,7 +10,17 @@ Nominations will close at midnight on <time datetime="2017-04-01 23:59">15 May 2
 
 Nominations are open to anyone working in the UK Civil Service, or a Crown body. You can nominate yourself or someone else to be part of the Index.
 
-----
+You can nominate as many people, teams or networks as you like.
+
+---
+
+<div id="nominateNow" class="card second" >
+	<div class="card-block">
+		<p class="h1 display-4 card-title"><a href="https://ukcsra.typeform.com/to/r2M2Mh" title="Find out more about each index">Find out more about the Indices</a></p>
+	</div>
+</div>
+					    
+---
 
 ## Tips for writing your nomination
 
