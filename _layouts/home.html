@@ -58,17 +58,21 @@ layout: default
 
 							<h2>Nominations</h2>
 
-							<p>Nominations will close at midnight on <time datetime="2017-04-01 23:59">15 May 2017</time>.</p>
+							<p>Nominations will close at midnight on <time datetime="{{ site.nominations-close }}">{{ site.nominations-close | date: "%d %B %Y" }}</time>.</p>
 
 							<p>Nominations are open to anyone working in the UK Civil Service, or a Crown body. You can nominate yourself or someone else to be part of the Index.</p>
+
+						{% if site.nominations == "open" %}
 
 						<hr>
 
 						<div id="nominateNow" class="card second" >
 							<div class="card-block">
-								<p class="h1 display-3 card-title"><a href="{{ '/nominate' | prepend: site.baseurl | prepend: site.url }}" title="Nominate a person, network or team for the Index now">Nominate now</a></p>
+								<p class="h1 display-4 card-title"><a href="/awards/nominate/" title="Nominate a person, network or team for the Index now">Find out how to nominate</a></p>
 							</div>
 					    </div>
+
+						{% endif %}
 
 					</div>
 
@@ -83,7 +87,7 @@ layout: default
 
 								<div class="card {{ index.which }}">
 									<div class="card-block">
-										<p class="h1 card-title"><a href="{{ index.url | prepend: site.baseurl | prepend: site.url }}">{{ index.display }}</a></p>
+										<p class="h2 card-title"><a href="{{ index.url | prepend: site.baseurl | prepend: site.url }}">{{ index.display }}</a></p>
 									</div>
 							    </div>
 

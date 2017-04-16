@@ -26,11 +26,15 @@ layout: default
 
 					<div class="col-xs-12 col-md-8 col-lg-8">
 
+						{% if site.nominations == "open" %}
+
 						<div id="nominateNow" class="card second" >
 							<div class="card-block">
 								<p class="h1 display-4 card-title"><a href="https://ukcsra.typeform.com/to/r2M2Mh" title="Nominate a person, network or team for the Index now">Submit your nomination</a></p>
 							</div>
 					    </div>
+
+						{% endif %}
 
 						{% if page.video != "" %}
 					    <div class="embed-responsive embed-responsive-16by9">
@@ -53,7 +57,7 @@ layout: default
 
 								<div class="card {{ index.which }} card-small">
 									<div class="card-block">
-										<p class="h1 card-title"><a href="{{ index.url | prepend: site.baseurl | prepend: site.url }}">{{ index.display }}</a></p>
+										<p class="h2 card-title"><a href="{{ index.url | prepend: site.baseurl | prepend: site.url }}">{{ index.display }}</a></p>
 									</div>
 							    </div>
 

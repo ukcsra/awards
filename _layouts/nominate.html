@@ -9,7 +9,7 @@ layout: default
 		<div class="container">
 
 			<h1> {{ page.display }} </h1>
-			<p id="nominateNowHeader" class="lead">Nominations close on 15 May 2017.</p>
+			<p id="nominateNowHeader" class="lead">Nominations close on <time datetime="{{ site.nominations-close }}">{{ site.nominations-close | date: "%d %B %Y" }}</time>.</p>
 
 			<a class="arrow-down" href="#content" title="Skip to content"><span class="sr-only">Skip to content</span></a>
 
@@ -27,11 +27,15 @@ layout: default
 
 					<div class="col-xs-12 col-md-8 col-lg-8">
 
-						<div id="nominateNow" class="card first" >
+						{% if site.nominations == "open" %}
+
+						<div id="nominateNow" class="card second" >
 							<div class="card-block">
 								<p class="h1 display-4 card-title"><a href="https://ukcsra.typeform.com/to/r2M2Mh" title="Nominate a person, network or team for the Index now">Submit your nomination</a></p>
 							</div>
 					    </div>
+
+						{% endif %}
 
 						{{ content }}
 

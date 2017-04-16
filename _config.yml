@@ -13,6 +13,11 @@ asset-path: "/assets"
 image-path: "/images"
 image-2x-path: "/images/@2x"
 
+# Timelines:
+nominations: "open"
+nominations-open: "2017-04-18 00:00"
+nominations-close: "2017-05-25 23:59"
+
 # Social settings
 facebook-id: "119705998363968" # For Facebook OpenGraph integration
 facebook-slug: "ukcsra" # Automatically pre-pends http://facebook.com/
