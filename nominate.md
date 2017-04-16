@@ -35,7 +35,3 @@ A mixture of senior civil servant and LGBT sector leaders will be judging the no
 ### Time
 
 This nomination will probably take around 15-30 minutes to complete. You must complete the nomination in one sitting: unfortunately this form doesn't save nominations until you click "Submit" at the end.
-
-### Only write things you are OK with being made public
-
-If your nomination is successful, we'll use the information you submit now to create the Impact Index. Please make sure you don't include any information that you wouldn't want made public. We will contact successful nominees before we publish anything, just in case.

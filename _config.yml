@@ -2,8 +2,7 @@
 
 title: Civil Service LGBT Impact Index
 
-description: ""
-keywords: ""
+description: "The Civil Service LGBT Impact Index celebrates the civil servants making things better for LGBT people."
 
 baseurl: "/awards" # the subpath of your site, e.g. /blog
 url: "//civilservice.lgbt"
@@ -15,15 +14,15 @@ image-path: "/images"
 image-2x-path: "/images/@2x"
 
 # Social settings
-facebook-id: "" # For Facebook OpenGraph integration
+facebook-id: "119705998363968" # For Facebook OpenGraph integration
 facebook-slug: "ukcsra" # Automatically pre-pends http://facebook.com/
 twitter-username: "ukcsra" # Twitter handle i.e. joebloggs
 github-username:  "ukcsra"
-google-site-verification: "" # GSV code; proves domain ownership
+google-site-verification: "RA-YBjxyRYVSuSFAYLKkufs6gjme6kMcihoB2KgKrTA" # GSV code; proves domain ownership
 
 # Analytics
-disable-analytics: true # Switch to "false" to start GA logging
-google-analytics: "" # GA ID code
+disable-analytics: false # Switch to "false" to start GA logging
+google-analytics: "UA-47423042-1" # GA ID code
 
 # Collections
 collections:

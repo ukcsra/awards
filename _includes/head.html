@@ -2,39 +2,45 @@
 
 	<!-- Required meta tags always come first -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	<meta name="author" content="{{ site.author }}" />
-	<meta name="keyword" content="{{ site.title }}, {{ site.keywords }}">
+	<!-- Base URL to use for all relative URLs contained within the document -->
+	<base href="{{ site.baseurl | prepend: site.url }}">
+	<meta name="url" content="{{ site.baseurl | prepend: site.url }}">
 
+	<!-- Place this data between the <head> tags of your website -->
 	<title>
 	    {% if page.title %}{{ page.title }} &middot; {{ site.title }}
 	    {% else %}{{ site.title }}{% endif %}
 	</title>
+	<meta name="application-name" content="{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta name="description" content="{{ site.description }}" />
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="{{ '/css/styles.css' | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}">
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="{{ site.title }}">
+	<meta itemprop="description" content="{{ site.description }}">
+	<meta itemprop="image" content="{{ '/social-media.png' | prepend: site.image-path | site.asset-path | prepend: site.baseurl | prepend: site.url }}">
 
-	<!-- Icons -->
-	<link rel="icon" href="{{ site.logo | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}">
-	<link rel="apple-touch-icon" href="{{ site.logo | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}">
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@{{ site.twitter-username }}">
+	<meta name="twitter:title" content="{% if page.layout != 'home' %}{{ page.title }} • {% endif %}{{ site.title }}">
+	<meta name="twitter:description" content="{{ site.description }}">
+	<meta name="twitter:creator" content="@{{ site.twitter-username }}">
+	<meta name="twitter:image:src" content="{{ '/social-media.png' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}">
 
-	<!-- URLs and feeds -->
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
-
-	<!-- Facebook Open Graph -->
+	<!-- Open Graph data -->
 	<meta property="fb:app_id" content="{{ site.facebook-id }}" />
-	<meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
-	<meta property="og:type" content="blog" />
-	<meta property="og:site_name" content="{{ site.title }}"/>
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"  />
+	<meta property="og:image" content="{{ '/social-media.png' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" />
+	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description | strip_html }}{% endif %}" />
+	<meta property="og:site_name" content="{{ site.title }}" />
 	<meta property="article:author" content="{{ site.facebook-slug | prepend: 'https://www.facebook.com/' }}" />
 	<meta property="article:publisher" content="{{ site.facebook-slug | prepend: 'https://www.facebook.com/' }}" />
-	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description | strip_html }}{% endif %}" />
-	<meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
+	<meta property="fb:admins" content="{{ site.facebook-id }}" />
 
 	<!-- Twitter Cards -->
 	<meta name="twitter:card" content="summary_large_image">
@@ -44,7 +50,23 @@
 	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description | strip_html }}{% endif %}">
 	<meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 
-	<!-- Google -->
-	<meta name="google-site-verification" content="{{ site.google-site-verification }}" />
+	<!-- Touch Icons -->
+	<link rel="icon" href="{{ '/touch.png' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="apple-touch-icon" href="{{ '/touch.png' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}">
+
+	<!-- Pinned Site -->
+	<link rel="mask-icon" href="{{ '/pinned.svg' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" color="#d40072">
+	<meta name="theme-color" content="#d40072">
+
+	<!-- Google site verification -->
+	<meta name="google-site-verification" content="{{ site.google-site-verification }}">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ '/css/styles.css' | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}">
+
+	<!-- URLs and feeds -->
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+
 
 </head>
