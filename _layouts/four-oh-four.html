@@ -2,16 +2,40 @@
 layout: default
 ---
 
-<div id="page">
+<div id="header">
 
-	<div id="header">
+	<div id="page-title">
 
-		<div class="container">
+		<h1><span class="text-fill">4O</span>OPS<span class="text-fill">4</span></h1>
 
-			<h1> <span class="text-fill">404</span><br>Page not found </h1>
+		<p class="lead">We can't find that page. <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}" title="Go to home page">Return home</a>?</p>
+
+	</div>
+
+</div>
+
+<div id="content" class="row">
+
+	{% for index in site.indices %}
+
+		<div class="col-xs-12 col-sm-6">
+
+			<a class="card-link" href="{{ index.url | prepend: site.baseurl | prepend: site.url }}" title="Read more about the {{ index.title }}">
+
+				<div class="card card-inverse">
+
+					<div class="card-block">
+
+						<p class="h2 card-title">{{ index.display }}</p>
+
+					</div>
+
+				</div>
+
+			</a>
 
 		</div>
 
-	</div>
+	{% endfor %}
 
 </div>

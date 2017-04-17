@@ -1,49 +1,49 @@
 footer {
 
-	color: $body-color;
+	div#footer {
 
-	a {
-		color: $body-color;
-		text-decoration: none;
-	}
+		padding: 			2rem;
 
-	display: block;
-	position: relative;
+		background: 		$footer-bg;
+		color: 				#ffffff;
 
-	min-height: 30vh;
-	padding: 2rem 0;
+		@include box-shadow(1px, 1px, 5px, 1px, $body-inverse-bg);
 
-	background: $footer-bg;
+		a {
 
-	div.ident {
-		padding: 4rem 0 1rem 0;
+			color: 				#ffffff;
+			text-decoration: 	underline;
 
-		a.footer-brand {
-			width: 3rem;
-			height: 3rem;
-			text-align: center;
-			vertical-align: middle;
+			&.footer-brand {
 
-			padding: 0.5rem !important;
+				position: 			relative;
+				display: 			inline-block;
 
-			color: $body-color;
-			background: $footer-bg;;
-			border: 1px solid $body-color;
-			text-stroke: 1px $body-color;
-			text-fill-color: $footer-bg;
-			-webkit-text-stroke: 1px $body-color;
-			-webkit-text-fill-color: $footer-bg;
-			font-weight: 600;
+				margin: 			5rem 0 0 0;
+				padding: 			7px 10px !important;
 
-			&:hover, &:focus {
-				color: $footer-bg;;
-				background: $body-color;
-				border: 1px solid $body-color;
-				text-stroke: 1px $footer-bg;;
-				text-fill-color: $footer-bg;;
-				-webkit-text-stroke: 1px $footer-bg;;
-				-webkit-text-fill-color: $footer-bg;;
-				text-decoration: none;
+				font-size: 			1.2rem;
+				text-decoration: 	none;
+
+				color: 				$footer-color;
+				background: 		transparent;
+				border: 			1px solid $footer-color;
+				text-stroke: 		1px $footer-color;
+				text-fill-color: 	$footer-bg;
+				-webkit-text-stroke: 		1px $footer-color;
+				-webkit-text-fill-color: 	$footer-bg;
+				font-weight: 		600;
+
+				&:hover, &:focus {
+					color: 				$footer-bg;
+					background: 		$footer-color;
+					border: 			1px solid $footer-color;
+					text-stroke: 		1px $footer-bg;;
+					text-fill-color: 	$footer-bg;;
+					-webkit-text-stroke: 		1px $footer-bg;;
+					-webkit-text-fill-color: 	$footer-bg;;
+					text-decoration: 	none;
+				}
 			}
 
 		}

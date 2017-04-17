@@ -2,42 +2,79 @@
 layout: default
 ---
 
-<div id="page">
+<div id="header">
 
-	<div id="header">
+	<div id="page-title">
 
-		<div class="container">
-
-			<h1> {{ page.display }} </h1>
-			<p id="nominateNowHeader" class="lead">Nominations close on <time datetime="{{ site.nominations-close }}">{{ site.nominations-close | date: "%d %B %Y" }}</time>.</p>
-
-			<a class="arrow-down" href="#content" title="Skip to content"><span class="sr-only">Skip to content</span></a>
-
-		</div>
+		{% if site.nominations == "closed" %}
+			<h1><span class='text-fill'>Nominate</span></h1>
+		{% elsif site.nominations == "open" %}
+			<h1><span class='text-fill'>Nominate</span> now</h1>
+		{% elsif site.nominations == "ended" %}
+			<h1><span class='text-fill'>Nominate</span></h1>
+		{% endif %}
 
 	</div>
 
-	<div id="content">
+</div>
 
-		<main>
+<div id="content" class="row">
 
-			<div class="container">
+	<div class="col-xs-12 col-sm-8">
 
-				<div class="row flex-items-xs-center">
+		<div class="card">
 
-					<div class="col-xs-12 col-md-8 col-lg-8">
+			<div class="card-block">
 
-						{% if site.nominations == "open" %}
+				{% if site.nominations == "closed" %}
 
-						<div id="nominateNow" class="card second" >
-							<div class="card-block">
-								<p class="h1 display-4 card-title"><a href="https://ukcsra.typeform.com/to/r2M2Mh" title="Nominate a person, network or team for the Index now">Submit your nomination</a></p>
-							</div>
-					    </div>
 
-						{% endif %}
+					<h2>Nominations are currently closed</h2>
 
-						{{ content }}
+					<p>Nominations open on <time datetime="{{ site.nominations-open }}">{{ site.nominations-open | date: "%d %B %Y" }}</time> and will close at midnight on <time datetime="{{ site.nominations-close }}">{{ site.nominations-close | date: "%d %B %Y" }}</time>.</p>
+
+					<p>The Index is open to anyone working in the UK Civil Service, or a Crown body. You can nominate yourself or someone else to be part of the Index.</p>
+
+				{% elsif site.nominations == "open" %}
+
+					<h2>Nominations are open now!</h2>
+
+		<p>Nominations opened on <time datetime="{{ site.nominations-open }}">{{ site.nominations-open | date: "%d %B %Y" }}</time> and will close at midnight on <time datetime="{{ site.nominations-close }}">{{ site.nominations-close | date: "%d %B %Y" }}</time>.</p>
+
+		<p>Nominations are open to anyone working in the UK Civil Service, or a Crown body. You can nominate yourself or someone else to be part of the Index.</p>
+
+				{% elsif site.nominations == "ended" %}
+
+					<h2>Nominations have now ended</h2>
+
+					<p>Nominations closed on <time datetime="{{ site.nominations-close }}">{{ site.nominations-close | date: "%d %B %Y" }}</time>.</p>
+
+					<p>We will be shortlisting nominees and will publish the final index and host an awards evening in Autumn 2017.</p>
+
+				{% endif %}
+
+			</div>
+
+		</div>
+
+		{% if site.nominations == "open" %}
+
+		<div class="card card-callout">
+
+			<div class="card-block">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-6">
+
+						<p class="h2 card-title"><a href="https://ukcsra.typeform.com/to/r2M2Mh" title="Submit a nomination">Submit a <span class="text-fill">nomination</span></a></p>
+
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+
+						<p class="lead">
+							<a href="https://ukcsra.typeform.com/to/r2M2Mh" title="Start a nomination to the Index">Submit your nomination</a> before<br><time datetime="{{ site.nominations-close }}">{{ site.nominations-close | date: "%d %B %Y" }}</time></p>
 
 					</div>
 
@@ -45,9 +82,87 @@ layout: default
 
 			</div>
 
-		</main>
+		</div>
+
+		{% endif %}
+
+		{% if site.nominations != "ended" %}
+
+		<div class="card">
+
+			<div class="card-block">
+
+				<h2>How to nominate</h2>
+
+				<p>To submit a nomination, you have to:</p>
+
+				<ol>
+					<li>give us some background about who you're nominating</li>
+					<li>write a nomination statement</li>
+				</ol>
+
+				<p>Your nomination statement has to answer 1 question:<br><strong>Why should you (or the person you're nomination) be in the Index?</strong></p>
+
+			</div>
+
+		</div>
+
+		<div class="card">
+
+			<div class="card-block">
+
+				<h2>Judging criteria</h2>
+
+				<p>In each nomination, we're looking for evidence that demonstrates how the person, network or team nominated has done some or all of the following:</p>
+
+				<ul>
+				  <li>supported staff development</li>
+				  <li>provided more pastoral staff support</li>
+				  <li>changed service delivery to support LGBT people</li>
+				  <li>changed something in their department to support LGBT people</li>
+				  <li>changed the Civil Service more broadly</li>
+				  <li>provided wider community outreach</li>
+				</ul>
+
+				<p>Each nomination will be marked by an independent panel, and each nomination will be given a score.</p>
+
+				<p><strong>You don't have to demonstrate evidence of all areas above to get into the Index you're nominated for.</strong> Points will be awards for <strong>breadth of impact</strong> (i.e. doing something in multiple categories) <strong>and</strong> for <strong>depth of impact</strong> (i.e. doing lots of things in one area).</p>
+
+			</div>
+
+		</div>
+
+		<div class="card">
+
+			<div class="card-block">
+
+				<h2>Nomination tips</h2>
+
+					<h3>Write clearly</h3>
+
+					<p>Make sure you write clearly. Spell out acronyms and explain unusual or complex terminology. Don't assume the judging panel will know about your work. It might be helpful to use the STAR (Situation, Task, Action, Result) technique when writing your answers.</p>
+
+					<h3>Write for a senior audience</h3>
+
+					<p>A mixture of senior civil servant and LGBT sector leaders will be judging the nominations. Make sure your nomination can be easily understood by a senior audience who might not be familiar with your work.</p>
+
+					<h3>Time</h3>
+
+					<p>This nomination will probably take around 15-30 minutes to complete. You must complete the nomination in one sitting: unfortunately this form doesn't save nominations until you click "Submit" at the end.
+</p>
+
+			</div>
+
+		</div>
+
+		{% endif %}
+
+	</div>
+
+	<div class="col-xs-12 col-sm-4">
+
+		{% include index-aside.html %}
 
 	</div>
 
 </div>
-

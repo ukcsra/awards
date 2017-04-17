@@ -1,7 +1,23 @@
-{% if page.layout != 'home' %}
-	<nav class="back">
+{% if page.layout == 'home' %}
 
-		<a href="{{ site.url | append: site.baseurl }}/" title="Go back to the home page">Home</a>
+<header>
+
+	<nav class="ukcsra">
+
+			<a href="//ukcsra.com" title="Go to the Civil Service Rainbow Alliance website"><img class="logo" src="{{ '/csra-wh-logo.png' |  prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="The Civil Service Rainbow Alliance logo"></a>
 
 	</nav>
+
+</header>
+
+{% elsif page.layout != 'home' %}
+<header>
+
+	<nav class="back">
+
+		<a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}" title="Go back to the home page">Home</a>
+
+	</nav>
+
+</header>
 {% endif %}

@@ -8,7 +8,7 @@ video: ""
 
 # {{ page.title }}
 
-This award is open to any network based in a Civil Service department, agencies or body, or other Crown organisation. 
+This award is open to any network based in a Civil Service department, agency or body, or other Crown organisation. 
 
 Networks will be asked to demonstrate what they have done for:
 
@@ -25,4 +25,6 @@ They will be asked to provide information abut their network including:
 - How big their department is in comparison
 - How much funding (or staff time) their receive
 - Whether they have a senior LGBT champion
+
+Networks don't have to demonstrate evidence against each of the areas listed above, but the more breadth and depth they can demonstrate the better.
 

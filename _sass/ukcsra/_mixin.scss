@@ -1,17 +1,16 @@
-@mixin text-outline($thickness) {
-	color: $body-color;
-	background: transparent;
-	text-stroke: $thickness $body-color;
-	text-fill-color: $body-bg;
-	-webkit-text-stroke: $thickness $body-color;
-	-webkit-text-fill-color: transparent;
+@mixin text-outline($text-color, $text-stroke-color, $text-fill-color, $text-background, $text-stroke-thickness) {
+	color: $text-color;
+	background: $text-background;
+
+	text-stroke: $text-stroke-thickness $text-stroke-color;
+	text-fill-color: $text-fill-color;
+
+	-webkit-text-stroke: $text-stroke-thickness $text-stroke-color;
+	-webkit-text-fill-color: $text-fill-color;
 }
 
-@mixin text-outline-inverse {
-	color: $body-color;
-	background: transparent;
-	text-stroke: 0px $body-color;
-	text-fill-color: $body-color;
-	-webkit-text-stroke: 0px $body-color;
-	-webkit-text-fill-color: $body-color;
+@mixin box-shadow ($horiztonal, $vertical, $blur, $spread, $color) {
+	-webkit-box-shadow: $horiztonal $vertical $blur $spread $color;
+	-moz-box-shadow: $horiztonal $vertical $blur $spread $color;
+	box-shadow: $horiztonal $vertical $blur $spread $color;
 }

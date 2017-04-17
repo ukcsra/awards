@@ -1,0 +1,25 @@
+<aside role="navigation">
+
+	<nav>
+
+	{% for index in site.indices %}
+
+		<a class="card-link" href="{{ index.url | prepend: site.baseurl | prepend: site.url }}" title="Read more about the {{ index.title }}">
+
+			<div class="card card-inverse">
+
+				<div class="card-block">
+
+					<p class="h2 card-title">{{ index.display }}</p>
+
+				</div>
+
+			</div>
+
+		</a>
+
+	{% endfor %}
+
+	</nav>
+
+</aside>

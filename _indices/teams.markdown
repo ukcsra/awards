@@ -2,13 +2,11 @@
 layout: page
 title:  "Teams Impact Index"
 display: "<span class='text-fill'>Teams</span> Impact Index"
-which: "fourth"
-video: ""
 ---
 
 # {{ page.title }}
 
-This award is open to any team working in the Civil Service (regardless of what it works on).
+This award is open to any team working in the Civil Service, regardless of what the team works on.
 
 Teams will be asked to demonstrate what, through the delivery of their work, they have done to support LGBT people in the real world. This might include how they have:
 
@@ -18,3 +16,5 @@ Teams will be asked to demonstrate what, through the delivery of their work, the
 - changed something in their department to support LGBT people
 - changed the Civil Service more broadly
 - provided wider community outreach
+
+Teams don't have to demonstrate their impact against all criteria - just the ones relevant to their project.

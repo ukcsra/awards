@@ -2,73 +2,44 @@
 layout: default
 ---
 
-<div id="page">
+<div id="header">
 
-	<div id="header">
+	<div id="page-title">
 
-		<div class="container">
-
-			<h1> {{ page.display }} </h1>
-			<p id="nominateNowHeader" class="lead">Nominations open. <a href="{{ '/nominate' | prepend: site.baseurl | prepend: site.url }}" title="Nominate a person, network or team for the Index now">Nominate now</a>.</p>
-
-			<a class="arrow-down" href="#content" title="Skip to content"><span class="sr-only">Skip to content</span></a>
-
-		</div>
-
-	</div>
-
-	<div id="content">
-
-		<main>
-
-			<div class="container">
-
-				<div class="row flex-items-xs-center">
-
-					<div class="col-xs-12 col-md-8 col-lg-8">
-
-
-						{{ content }}
-
-						<hr>
-
-						<div class="row">
-
-							{% for index in site.indices %}
-
-							<div class="col-xs-12 col-md-6 col-lg-6">
-
-
-								<div class="card {{ index.which }}">
-									<div class="card-block">
-										<p class="h1 card-title"><a href="{{ index.url | prepend: site.baseurl | prepend: site.url }}">{{ index.display }}</a></p>
-									</div>
-							    </div>
-
-							</div>
-
-
-						    {% endfor %}
-
-						</div>
-
-						<hr>
-
-						<div id="nominateNow" class="card first" >
-							<div class="card-block">
-								<p class="h1 display-4 card-title"><a href="https://ukcsra.typeform.com/to/r2M2Mh" title="Nominate a person, network or team for the Index now">Submit your nomination</a></p>
-							</div>
-					    </div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</main>
+		<h1>The Indices</h1>
 
 	</div>
 
 </div>
 
+<div id="content" class="row">
+
+	{% for index in site.indices %}
+
+		<div class="col-xs-12 col-sm-6">
+
+			<a class="card-link" href="{{ index.url | prepend: site.baseurl | prepend: site.url }}" title="Read more about the {{ index.title }}">
+
+				<div class="card card-inverse">
+
+					<div class="card-block">
+
+						<p class="h2 card-title">{{ index.display }}</p>
+
+					</div>
+
+				</div>
+
+			</a>
+
+		</div>
+
+	{% endfor %}
+
+	<div class="col-12">
+
+	{% include nominations-callout.html %}
+
+	</div>
+
+</div>

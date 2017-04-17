@@ -21,3 +21,4 @@ Nominees will be asked to demonstrate what they have done to make the Civil Serv
 - changed the Civil Service more broadly
 - provided wider community outreach
 
+Nominees don't have to demonstrate an impact against all of these areas: the judges will be looking for depth in each area and breadth across the areas.

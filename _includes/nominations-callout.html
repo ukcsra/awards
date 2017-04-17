@@ -1,0 +1,55 @@
+		<div class="card card-callout">
+
+			<div class="card-block">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-6">
+
+						{% if site.nominations == "open" %}
+
+							<p class="h2 card-title">Nominations are <span class="text-fill">open</span></p>
+
+						{% elsif site.nominations == "closed" %}
+
+							<p class="h2 card-title">Nominations are <span class="text-fill">closed</span></p>
+
+						{% elsif site.nominations == "ended" %}
+
+							<p class="h2 card-title">Nominations have <span class="text-fill">ended</span></p>
+
+						{% endif %}
+
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+
+						{% if site.nominations == "open" %}
+
+						<p class="lead">
+							{% if page.url contains "nominate" %}
+							<a href="https://ukcsra.typeform.com/to/r2M2Mh" title="Start a nomination to the Index">Submit your nomination</a>
+							{% else %}
+							<a href="{{ '/nominate' | prepend: site.baseurl | prepend: site.url }}" title="Start a nomination to the Index">Submit your nomination</a>
+							{% endif %}
+							 before<br><time datetime="{{ site.nominations-close }}">{{ site.nominations-close | date: "%d %B %Y" }}</time></p>
+
+						{% elsif site.nominations == "closed" %}
+
+						<p class="lead">Nominations open on<br><time datetime="{{ site.nominations-close }}">{{ site.nominations-open | date: "%d %B %Y" }}</time></p>
+						<p><a href="{{ '/nominate' | prepend: site.baseurl | prepend: site.url }}" title="Find out more about the nominations process">Find out more about the nominations process</a></p>
+
+						{% elsif site.nominations == "ended" %}
+
+						<p class="lead">Nominations closed on <time datetime="{{ site.nominations-close }}">{{ site.nominations-close | date: "%d %B %Y" }}</time>.</p>
+						<p class="lead">The Index will be published Autumn 2017.</p>
+
+						{% endif %}
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
