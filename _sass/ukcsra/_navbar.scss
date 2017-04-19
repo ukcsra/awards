@@ -65,6 +65,13 @@ nav.back {
 		}
 
 	}
+	
+	@supports (-ms-ime-align:auto) {
+		a {
+			-webkit-text-stroke: none;
+			-webkit-text-fill-color: rgba(255,255,255,0.5);
+		}
+	}
 
 }
 
@@ -103,6 +110,13 @@ nav.scroll {
 
 			content: "↓";
 			z-index: 100000 !important;
+		}
+	}
+	
+	@supports (-ms-ime-align:auto) {
+		a {
+			-webkit-text-stroke: none;
+			-webkit-text-fill-color: rgba(255,255,255,0.5);
 		}
 	}
 
