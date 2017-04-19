@@ -47,6 +47,14 @@ footer {
 			}
 
 		}
+		
+						@supports (-ms-ime-align:auto) {
+					a {
+						-webkit-text-stroke: none;
+						-webkit-text-fill-color: rgba(255,255,255,0.5);
+					}
+				}
+
 
 	}
 
