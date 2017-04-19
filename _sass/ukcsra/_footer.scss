@@ -45,16 +45,15 @@ footer {
 					text-decoration: 	none;
 				}
 			}
-
-		}
-		
-						@supports (-ms-ime-align:auto) {
-					a {
+			
+									@supports (-ms-ime-align:auto) {
+					&.footer-brand {
 						-webkit-text-stroke: none;
 						-webkit-text-fill-color: rgba(255,255,255,0.5);
 					}
 				}
 
+		}
 
 	}
 
