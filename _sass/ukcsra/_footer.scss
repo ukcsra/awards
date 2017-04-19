@@ -25,13 +25,10 @@ footer {
 				font-size: 			1.2rem;
 				text-decoration: 	none;
 
-				color: 				$footer-color;
-				background: 		transparent;
+				@include text-outline($body-inverse-color, $body-inverse-color, transparent, transparent, 2px);
+				
 				border: 			1px solid $footer-color;
-				text-stroke: 		1px $footer-color;
-				text-fill-color: 	$footer-bg;
-				-webkit-text-stroke: 		1px $footer-color;
-				-webkit-text-fill-color: 	$footer-bg;
+				
 				font-weight: 		600;
 
 				&:hover, &:focus {
@@ -45,14 +42,14 @@ footer {
 					text-decoration: 	none;
 				}
 			}
-			
-									@supports (-ms-ime-align:auto) {
-					&.footer-brand {
-						-webkit-text-stroke: none;
-						-webkit-text-fill-color: rgba(255,255,255,0.5);
-					}
-				}
 
+		}
+		
+		@supports (-ms-ime-align:auto) {
+			a.footer-brand {
+				-webkit-text-stroke: none;
+				-webkit-text-fill-color: rgba(255,255,255,0.5);
+			}
 		}
 
 	}
