@@ -16,6 +16,6 @@ In each nomination, we're looking for evidence that demonstrates how the person,
 
 Each nomination will be marked by an independent panel, and each nomination will be given a score.
 
-**You don't have to demonstrate evidence of all areas above to get into the Index you're nominated for.**
+**You don't have to demonstrate evidence of all areas above to get into the Index you're nominated for.** Each component of the Index listed above is given equal weighting.
 
 Points will be awards for **breadth of impact** (i.e. doing something in multiple categories) and for **depth of impact** (i.e. doing lots of things in one area).
