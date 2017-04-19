@@ -233,7 +233,15 @@ body {
 									}
 								}
 							}
-						}
+						} 
+
+				@supports (-ms-ime-align:auto) {
+					.card-title {
+						-webkit-text-stroke: none;
+						-webkit-text-fill-color: rgba(255,255,255,0.5);
+					}
+				}
+
 
 						a {
 							color: #ffffff;
