@@ -23,16 +23,28 @@ function updateImages() {
 
 	var facebookWidth = 1200;
 	var facebookHeight = 630;
+	var facebookLineHeight = 100;
+
 	var twitterWidth = 1024;
 	var twitterHeight = 512;
+	var twitterLineHeight = 80;
+
 	var instagramWidth = 1080;
 	var instagramHeight = instagramWidth;
+	var instagramLineHeight = 120;
 
+	var img = document.getElementById("csra-logo");
 
 	showLines();
 
 	var canvas = document.getElementById('facebook');
+	canvas.width = (facebookWidth * 2);
+	canvas.height = (facebookHeight * 2);
+	canvas.style.width = facebookWidth + "px";
+	canvas.style.height = facebookHeight + "px";
+
 	var context = canvas.getContext('2d');
+	context.scale(2,2);
 
 	// Create gradient
 	var grd = context.createLinearGradient(0,0,1200,630);
@@ -61,23 +73,23 @@ function updateImages() {
 	} else if ( textLine3 == "" ) {
 
 		if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (facebookBaseline - 50));
+			context.strokeText(textLine1, 50, (facebookBaseline - (facebookLineHeight*0.5)));
 		} else {
-			context.fillText(textLine1, 50, (facebookBaseline - 50));
+			context.fillText(textLine1, 50, (facebookBaseline - (facebookLineHeight*0.5)));
 		}
 
 		if (textFill2 == false) {
-			context.strokeText(textLine2, 50, (facebookBaseline + 50));
+			context.strokeText(textLine2, 50, (facebookBaseline + (facebookLineHeight*0.5)));
 		} else {
-			context.fillText(textLine2, 50, (facebookBaseline + 50));
+			context.fillText(textLine2, 50, (facebookBaseline + (facebookLineHeight*0.5)));
 		}
 
 	} else if ( textLine4 == "" ) {
 
     	if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (facebookBaseline - 100));
+			context.strokeText(textLine1, 50, (facebookBaseline - (facebookLineHeight*1)));
 		} else {
-			context.fillText(textLine1, 50, (facebookBaseline - 100));
+			context.fillText(textLine1, 50, (facebookBaseline - (facebookLineHeight*1)));
 		}
 
     	if (textFill2 == false) {
@@ -87,49 +99,49 @@ function updateImages() {
 		}
 
     	if (textFill3 == false) {
-			context.strokeText(textLine3, 50, (facebookBaseline + 100));
+			context.strokeText(textLine3, 50, (facebookBaseline + (facebookLineHeight*1)));
 		} else {
-			context.fillText(textLine3, 50, (facebookBaseline + 100));
+			context.fillText(textLine3, 50, (facebookBaseline + (facebookLineHeight*1)));
 		}
 
 	} else if ( textLine5 == "" ) {
 
 		if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (facebookBaseline - 150));
+			context.strokeText(textLine1, 50, (facebookBaseline - (facebookLineHeight*1.5)));
 		} else {
-			context.fillText(textLine1, 50,  (facebookBaseline - 150));
+			context.fillText(textLine1, 50,  (facebookBaseline - (facebookLineHeight*1.5)));
 		}
 
 		if (textFill2 == false) {
-			context.strokeText(textLine2, 50, (facebookBaseline - 50));
+			context.strokeText(textLine2, 50, (facebookBaseline - (facebookLineHeight*0.5)));
 		} else {
-			context.fillText(textLine2, 50, (facebookBaseline - 50));
+			context.fillText(textLine2, 50, (facebookBaseline - (facebookLineHeight*0.5)));
 		}
 
 		if (textFill3 == false) {
-			context.strokeText(textLine3, 50, (facebookBaseline + 50));
+			context.strokeText(textLine3, 50, (facebookBaseline + (facebookLineHeight*0.5)));
 		} else {
-			context.fillText(textLine3, 50,  (facebookBaseline + 50));
+			context.fillText(textLine3, 50,  (facebookBaseline + (facebookLineHeight*0.5)));
 		}
 
 		if (textFill4 == false) {
-			context.strokeText(textLine4, 50, (facebookBaseline + 150));
+			context.strokeText(textLine4, 50, (facebookBaseline + (facebookLineHeight*1.5)));
 		} else {
-			context.fillText(textLine4, 50, (facebookBaseline + 150));
+			context.fillText(textLine4, 50, (facebookBaseline + (facebookLineHeight*1.5)));
 		}
 
 	} else if ( textLine5 != "" ) {
 
     	if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (facebookBaseline - 200));
+			context.strokeText(textLine1, 50, (facebookBaseline - (facebookLineHeight*2)));
 		} else {
-			context.fillText(textLine1, 50, (facebookBaseline - 200));
+			context.fillText(textLine1, 50, (facebookBaseline - (facebookLineHeight*2)));
 		}
 
     	if (textFill2 == false) {
-			context.strokeText(textLine2, 50, (facebookBaseline - 100));
+			context.strokeText(textLine2, 50, (facebookBaseline - (facebookLineHeight*1)));
 		} else {
-			context.fillText(textLine2, 50, (facebookBaseline - 100));
+			context.fillText(textLine2, 50, (facebookBaseline - (facebookLineHeight*1)));
 		}
 
     	if (textFill3 == false) {
@@ -139,20 +151,20 @@ function updateImages() {
 		}
 
     	if (textFill4 == false) {
-			context.strokeText(textLine4, 50, (facebookBaseline + 100));
+			context.strokeText(textLine4, 50, (facebookBaseline + (facebookLineHeight*1)));
 		} else {
-			context.fillText(textLine4, 50, (facebookBaseline + 100));
+			context.fillText(textLine4, 50, (facebookBaseline + (facebookLineHeight*1)));
 		}
 
     	if (textFill5 == false) {
-			context.strokeText(textLine5, 50, (facebookBaseline + 200));
+			context.strokeText(textLine5, 50, (facebookBaseline + (facebookLineHeight*2)));
 		} else {
-			context.fillText(textLine5, 50, (facebookBaseline + 200));
+			context.fillText(textLine5, 50, (facebookBaseline + (facebookLineHeight*2)));
 		}
 
 	}
 
-
+	context.drawImage(img, (facebookWidth - 100) , (facebookHeight - 60), 80, 40);
 
 
 	// save canvas image as data url (png format by default)
@@ -163,7 +175,13 @@ function updateImages() {
 	document.getElementById('facebook-output').src = dataURL;
 
 	var canvas = document.getElementById('twitter');
+	canvas.width = (twitterWidth * 2);
+	canvas.height = (twitterHeight * 2);
+	canvas.style.width = twitterWidth + "px";
+	canvas.style.height = twitterHeight + "px";
+
 	var context = canvas.getContext('2d');
+	context.scale(2,2);
 
 	// Create gradient
 	var grd = context.createLinearGradient(0,0,1024,512);
@@ -192,23 +210,23 @@ function updateImages() {
 	} else if ( textLine3 == "" ) {
 
 		if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (twitterBaseline - 40));
+			context.strokeText(textLine1, 50, (twitterBaseline - (twitterLineHeight*0.5)));
 		} else {
-			context.fillText(textLine1, 50, (twitterBaseline - 40));
+			context.fillText(textLine1, 50, (twitterBaseline - (twitterLineHeight*0.5)));
 		}
 
 		if (textFill2 == false) {
-			context.strokeText(textLine2, 50, (twitterBaseline + 40));
+			context.strokeText(textLine2, 50, (twitterBaseline + (twitterLineHeight*0.5)));
 		} else {
-			context.fillText(textLine2, 50, (twitterBaseline + 40));
+			context.fillText(textLine2, 50, (twitterBaseline + (twitterLineHeight*0.5)));
 		}
 
 	} else if ( textLine4 == "" ) {
 
     	if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (twitterBaseline - 80));
+			context.strokeText(textLine1, 50, (twitterBaseline - (twitterLineHeight*1)));
 		} else {
-			context.fillText(textLine1, 50, (twitterBaseline - 80));
+			context.fillText(textLine1, 50, (twitterBaseline - (twitterLineHeight*1)));
 		}
 
     	if (textFill2 == false) {
@@ -218,49 +236,49 @@ function updateImages() {
 		}
 
     	if (textFill3 == false) {
-			context.strokeText(textLine3, 50, (twitterBaseline + 80));
+			context.strokeText(textLine3, 50, (twitterBaseline + (twitterLineHeight*1)));
 		} else {
-			context.fillText(textLine3, 50, (twitterBaseline + 80));
+			context.fillText(textLine3, 50, (twitterBaseline + (twitterLineHeight*1)));
 		}
 
 	} else if ( textLine5 == "" ) {
 
 		if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (twitterBaseline - 120));
+			context.strokeText(textLine1, 50, (twitterBaseline - (twitterLineHeight*1.5)));
 		} else {
-			context.fillText(textLine1, 50, (twitterBaseline - 120));
+			context.fillText(textLine1, 50, (twitterBaseline - (twitterLineHeight*1.5)));
 		}
 
 		if (textFill2 == false) {
-			context.strokeText(textLine2, 50, (twitterBaseline - 40));
+			context.strokeText(textLine2, 50, (twitterBaseline - (twitterLineHeight*0.5)));
 		} else {
-			context.fillText(textLine2, 50, (twitterBaseline - 40));
+			context.fillText(textLine2, 50, (twitterBaseline - (twitterLineHeight*0.5)));
 		}
 
 		if (textFill3 == false) {
-			context.strokeText(textLine3, 50, (twitterBaseline + 40));
+			context.strokeText(textLine3, 50, (twitterBaseline + (twitterLineHeight*0.5)));
 		} else {
-			context.fillText(textLine3, 50, (twitterBaseline + 40));
+			context.fillText(textLine3, 50, (twitterBaseline + (twitterLineHeight*0.5)));
 		}
 
 		if (textFill4 == false) {
-			context.strokeText(textLine4, 50, (twitterBaseline + 120));
+			context.strokeText(textLine4, 50, (twitterBaseline + (twitterLineHeight*1.5)));
 		} else {
-			context.fillText(textLine4, 50, (twitterBaseline + 120));
+			context.fillText(textLine4, 50, (twitterBaseline + (twitterLineHeight*1.5)));
 		}
 
 	} else if ( textLine5 != "" ) {
 
     	if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (twitterBaseline - 160));
+			context.strokeText(textLine1, 50, (twitterBaseline - (twitterLineHeight*2)));
 		} else {
-			context.fillText(textLine1, 50, (twitterBaseline - 160));
+			context.fillText(textLine1, 50, (twitterBaseline - (twitterLineHeight*2)));
 		}
 
     	if (textFill2 == false) {
-			context.strokeText(textLine2, 50, (twitterBaseline - 80));
+			context.strokeText(textLine2, 50, (twitterBaseline - (twitterLineHeight*1)));
 		} else {
-			context.fillText(textLine2, 50, (twitterBaseline - 80));
+			context.fillText(textLine2, 50, (twitterBaseline - (twitterLineHeight*1)));
 		}
 
     	if (textFill3 == false) {
@@ -270,21 +288,21 @@ function updateImages() {
 		}
 
     	if (textFill4 == false) {
-			context.strokeText(textLine4, 50, (twitterBaseline + 80));
+			context.strokeText(textLine4, 50, (twitterBaseline + (twitterLineHeight*1)));
 		} else {
-			context.fillText(textLine4, 50, (twitterBaseline + 80));
+			context.fillText(textLine4, 50, (twitterBaseline + (twitterLineHeight*1)));
 		}
 
     	if (textFill5 == false) {
-			context.strokeText(textLine5, 50, (twitterBaseline + 160));
+			context.strokeText(textLine5, 50, (twitterBaseline + (twitterLineHeight*2)));
 		} else {
-			context.fillText(textLine5, 50, (twitterBaseline + 160));
+			context.fillText(textLine5, 50, (twitterBaseline + (twitterLineHeight*2)));
 		}
 
 	}
 
-	// save canvas image as data url (png format by default)
-	var dataURL = canvas.toDataURL();
+
+	context.drawImage(img, (twitterWidth - 100) , (twitterHeight - 60), 80, 40);
 
 	// save canvas image as data url (png format by default)
 	var dataURL = canvas.toDataURL();
@@ -294,10 +312,16 @@ function updateImages() {
 	document.getElementById('twitter-output').src = dataURL;
 
 	var canvas = document.getElementById('instagram');
+	canvas.width = (instagramWidth * 2);
+	canvas.height = (instagramHeight * 2);
+	canvas.style.width = instagramWidth + "px";
+	canvas.style.height = instagramHeight + "px";
+
 	var context = canvas.getContext('2d');
+	context.scale(2,2);
 
 	// Create gradient
-	var grd = context.createLinearGradient(0,0,1024,512);
+	var grd = context.createLinearGradient(0, 0, instagramWidth, instagramHeight);
 	grd.addColorStop(0, bgGradient1);
 	grd.addColorStop(1, bgGradient2);
 
@@ -323,23 +347,23 @@ function updateImages() {
 	} else if ( textLine3 == "" ) {
 
 		if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (instagramBaseline - 60));
+			context.strokeText(textLine1, 50, (instagramBaseline - (instagramLineHeight*0.5)));
 		} else {
-			context.fillText(textLine1, 50, (instagramBaseline - 60));
+			context.fillText(textLine1, 50, (instagramBaseline - (instagramLineHeight*0.5)));
 		}
 
 		if (textFill2 == false) {
-			context.strokeText(textLine2, 50, (instagramBaseline + 60));
+			context.strokeText(textLine2, 50, (instagramBaseline + (instagramLineHeight*0.5)));
 		} else {
-			context.fillText(textLine2, 50, (instagramBaseline + 60));
+			context.fillText(textLine2, 50, (instagramBaseline + (instagramLineHeight*0.5)));
 		}
 
 	} else if ( textLine4 == "" ) {
 
     	if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (instagramBaseline - 120));
+			context.strokeText(textLine1, 50, (instagramBaseline - (instagramLineHeight*1)));
 		} else {
-			context.fillText(textLine1, 50, (instagramBaseline - 120));
+			context.fillText(textLine1, 50, (instagramBaseline - (instagramLineHeight*1)));
 		}
 
     	if (textFill2 == false) {
@@ -349,73 +373,72 @@ function updateImages() {
 		}
 
     	if (textFill3 == false) {
-			context.strokeText(textLine3, 50, (instagramBaseline + 120));
+			context.strokeText(textLine3, 50, (instagramBaseline + (instagramLineHeight*1)));
 		} else {
-			context.fillText(textLine3, 50, (instagramBaseline + 120));
+			context.fillText(textLine3, 50, (instagramBaseline + (instagramLineHeight*1)));
 		}
 
 	} else if ( textLine5 == "" ) {
 
 		if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (instagramBaseline - 180));
+			context.strokeText(textLine1, 50, (instagramBaseline - (instagramLineHeight*1.5)));
 		} else {
-			context.fillText(textLine1, 50,  (instagramBaseline - 180));
+			context.fillText(textLine1, 50, (instagramBaseline - (instagramLineHeight*1.5)));
 		}
 
 		if (textFill2 == false) {
-			context.strokeText(textLine2, 50, (instagramBaseline - 60));
+			context.strokeText(textLine2, 50, (instagramBaseline - (instagramLineHeight*0.5)));
 		} else {
-			context.fillText(textLine2, 50, (instagramBaseline - 60));
+			context.fillText(textLine2, 50, (instagramBaseline - (instagramLineHeight*0.5)));
 		}
 
 		if (textFill3 == false) {
-			context.strokeText(textLine3, 50, (instagramBaseline + 60));
+			context.strokeText(textLine3, 50, (instagramBaseline + (instagramLineHeight*0.5)));
 		} else {
-			context.fillText(textLine3, 50,  (instagramBaseline + 60));
+			context.fillText(textLine3, 50, (instagramBaseline + (instagramLineHeight*0.5)));
 		}
 
 		if (textFill4 == false) {
-			context.strokeText(textLine4, 50, (instagramBaseline + 180));
+			context.strokeText(textLine4, 50, (instagramBaseline + (instagramLineHeight*1.5)));
 		} else {
-			context.fillText(textLine4, 50, (instagramBaseline + 180));
+			context.fillText(textLine4, 50, (instagramBaseline + (instagramLineHeight*1.5)));
 		}
 
 	} else if ( textLine5 != "" ) {
 
     	if (textFill1 == false) {
-			context.strokeText(textLine1, 50, (instagramBaseline - 240));
+			context.strokeText(textLine1, 50, (instagramBaseline - (instagramLineHeight*2)));
 		} else {
-			context.fillText(textLine1, 50, (instagramBaseline - 240));
+			context.fillText(textLine1, 50, (instagramBaseline - (instagramLineHeight*2)));
 		}
 
     	if (textFill2 == false) {
-			context.strokeText(textLine2, 50, (instagramBaseline - 120));
+			context.strokeText(textLine2, 50, (instagramBaseline - (instagramLineHeight*1)));
 		} else {
-			context.fillText(textLine2, 50, (instagramBaseline - 120));
+			context.fillText(textLine2, 50, (instagramBaseline - (instagramLineHeight*1)));
 		}
 
     	if (textFill3 == false) {
 			context.strokeText(textLine3, 50, instagramBaseline);
 		} else {
-			context.fillText(textLine3, 50,  instagramBaseline);
+			context.fillText(textLine3, 50, instagramBaseline);
 		}
 
     	if (textFill4 == false) {
-			context.strokeText(textLine4, 50, (instagramBaseline + 120));
+			context.strokeText(textLine4, 50, (instagramBaseline + (instagramLineHeight*1)));
 		} else {
-			context.fillText(textLine4, 50, (instagramBaseline + 120));
+			context.fillText(textLine4, 50, (instagramBaseline + (instagramLineHeight*1)));
 		}
 
     	if (textFill5 == false) {
-			context.strokeText(textLine5, 50, (instagramBaseline + 240));
+			context.strokeText(textLine5, 50, (instagramBaseline + (instagramLineHeight*2)));
 		} else {
-			context.fillText(textLine5, 50, (instagramBaseline + 240));
+			context.fillText(textLine5, 50, (instagramBaseline + (instagramLineHeight*2)));
 		}
 
 	}
 
-	// save canvas image as data url (png format by default)
-	var dataURL = canvas.toDataURL();
+	context.drawImage(img, (instagramWidth - 100) , (instagramHeight - 60), 80, 40);
 
 	// save canvas image as data url (png format by default)
 	var dataURL = canvas.toDataURL();
