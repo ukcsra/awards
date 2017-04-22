@@ -1,0 +1,202 @@
+---
+layout: default
+---
+
+<div class="row">
+
+	<div id="imageInputs" class="col-xs-12 col-sm-6">
+
+		<div class="card">
+			<div class="card-block">
+
+				{{ content }}
+
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-block">
+
+			    <h1>Set up</h1>
+
+				<div class="row">
+
+					<div class="col-12">
+
+						<div class="form-group row">
+
+							<label for="exampleSelect1" class="col-4">Gradient</label>
+						    <select class="form-control col-4" id="formGradient1" onclick="updateImages();">
+						      <option value="#b10e1e">Red</option>
+						      <option value="#ffbf47">Yellow</option>
+						      <option value="#006435">Green</option>
+						      <option value="#2b8cc4">Blue</option>
+						      <option value="#912b88">Purple</option>
+						      <option value="#d53880">Pink</option>
+						      <option value="#f47738">Orange</option>
+						      <option value="#28a197">Turquoise</option>
+						      <option value="#1d1d1d">Grey</option>
+						    </select>
+
+						    <select class="form-control col-4" id="formGradient2" onclick="updateImages();">
+						      <option value="#b10e1e">Red</option>
+						      <option value="#ffbf47">Yellow</option>
+						      <option value="#006435">Green</option>
+						      <option value="#2b8cc4">Blue</option>
+						      <option value="#912b88">Purple</option>
+						      <option value="#d53880">Pink</option>
+						      <option value="#f47738">Orange</option>
+						      <option value="#28a197">Turquoise</option>
+						      <option value="#1d1d1d">Grey</option>
+						    </select>
+
+						</div>
+
+						<div class="row">
+							<div class="col-9"><p><strong>Enter the text to display</strong></p></div>
+							<div class="col-3 text-center"><p><strong>Text fill</strong></p></div>
+						</div>
+
+						<div class="form-group row">
+
+							<label class="sr-only" for="formText1">Text line 1</label>
+							<div class="col-9">
+							<input type="text" class="form-control" id="formText1" placeholder="Enter text to display" oninput="updateImages();">
+							</div>
+
+							<div class="form-check col-sm-3 text-center">
+								<label class="custom-control custom-checkbox">
+								  <input id="formFillCheck1" type="checkbox" class="custom-control-input" onclick="updateImages();">
+								  <span class="custom-control-indicator"></span>
+								  <span class="custom-control-description sr-only">Text fill?</span>
+								</label>
+							</div>
+
+						</div>
+
+						<div id="lines2" class="form-group row" style="display: none;">
+
+							<label class="sr-only" for="formText2">Text line 2</label>
+							<div class="col-9">
+							<input type="text" class="form-control" id="formText2" placeholder="Enter text to display" oninput="updateImages();">
+							</div>
+
+							<div class="form-check col-sm-3 text-center">
+								<label class="custom-control custom-checkbox">
+								  <input id="formFillCheck2" type="checkbox" class="custom-control-input" onclick="updateImages();">
+								  <span class="custom-control-indicator"></span>
+								  <span class="custom-control-description sr-only">Text fill?</span>
+								</label>
+							</div>
+
+						</div>
+
+						<div id="lines3" class="form-group row" style="display: none;">
+
+							<label class="sr-only" for="formText3">Text line 3</label>
+							<div class="col-9">
+							<input type="text" class="form-control" id="formText3" placeholder="Enter text to display" oninput="updateImages();">
+							</div>
+
+							<div class="form-check col-sm-3 text-center">
+								<label class="custom-control custom-checkbox">
+								  <input id="formFillCheck3" type="checkbox" class="custom-control-input" onclick="updateImages();">
+								  <span class="custom-control-indicator"></span>
+								  <span class="custom-control-description sr-only">Text fill?</span>
+								</label>
+							</div>
+
+						</div>
+
+						<div id="lines4" class="form-group row" style="display: none;">
+
+							<label class="sr-only" for="formText4">Text line 4</label>
+							<div class="col-9">
+							<input type="text" class="form-control" id="formText4" placeholder="Enter text to display" oninput="updateImages();">
+							</div>
+
+							<div class="form-check col-sm-3 text-center">
+								<label class="custom-control custom-checkbox">
+								  <input id="formFillCheck4" type="checkbox" class="custom-control-input" onclick="updateImages();">
+								  <span class="custom-control-indicator"></span>
+								  <span class="custom-control-description sr-only">Text fill?</span>
+								</label>
+							</div>
+
+						</div>
+
+						<div id="lines5" class="form-group row" style="display: none;">
+
+							<label class="sr-only" for="formText5">Text line 5</label>
+							<div class="col-9">
+							<input type="text" class="form-control" id="formText5" placeholder="Enter text to display" oninput="updateImages();">
+							</div>
+
+							<div class="form-check col-sm-3 text-center">
+								<label class="custom-control custom-checkbox">
+								  <input id="formFillCheck5" type="checkbox" class="custom-control-input" onclick="updateImages();">
+								  <span class="custom-control-indicator"></span>
+								  <span class="custom-control-description sr-only">Text fill?</span>
+								</label>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="imageOutputs" class="col-xs-12 col-sm-6">
+
+		<div id="placeholder">
+
+			<p class="h2">Previews appear here</h1>
+
+			<p class="lead">Start adjusting settings, right, and images will be previewed here.</p>
+
+		</div>
+
+		<div id="facebook-preview" class="card" style="display: none;">
+			<div class="card-block">
+
+			    <h2>Facebook</h2>
+
+			    <canvas id="facebook" width="1200" height="630" style="display:none;"></canvas>
+
+			    <img id="facebook-output" class="img-fluid" alt="Right click to save me!">
+
+			</div>
+		</div>
+
+		<div id="twitter-preview" class="card" style="display: none;">
+			<div class="card-block">
+
+			    <h2>Twitter</h2>
+
+				<canvas id="twitter" width="1024" height="512" style="display:none;"></canvas>
+
+			    <img id="twitter-output" class="img-fluid" alt="Right click to save me!">
+
+			</div>
+		</div>
+
+		<div id="instagram-preview" class="card" style="display: none;">
+			<div class="card-block">
+
+			    <h2>Instagram</h2>
+
+				<canvas id="instagram" width="1080" height="1080" style="display:none;"></canvas>
+
+			    <img id="instagram-output" class="img-fluid" alt="Right click to save me!">
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
