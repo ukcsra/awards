@@ -1,4 +1,4 @@
-<head prefix="og: http://ogp.me/ns#">
+<head prefix="og: //ogp.me/ns#">
 
 	<!-- Required meta tags always come first -->
 	<meta charset="utf-8">
@@ -38,8 +38,8 @@
 	<meta property="og:image" content="{{ '/social-media.png' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description | strip_html }}{% endif %}" />
 	<meta property="og:site_name" content="{{ site.title }}" />
-	<meta property="article:author" content="{{ site.facebook-slug | prepend: 'https://www.facebook.com/' }}" />
-	<meta property="article:publisher" content="{{ site.facebook-slug | prepend: 'https://www.facebook.com/' }}" />
+	<meta property="article:author" content="{{ site.facebook-slug | prepend: '//www.facebook.com/' }}" />
+	<meta property="article:publisher" content="{{ site.facebook-slug | prepend: '//www.facebook.com/' }}" />
 	<meta property="fb:admins" content="{{ site.facebook-id }}" />
 
 	<!-- Twitter Cards -->
