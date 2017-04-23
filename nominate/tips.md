@@ -7,7 +7,7 @@ title:  "Nomination tips"
 
 ### Write clearly
 
-Make sure you write clearly. Spell out acronyms and explain unusual or complex terminology. Don't assume the judging panel will know about your work. It might be helpful to use the STAR (Situation, Task, Action, Result) technique when writing your answers.
+Make sure you write clearly. Spell out acronyms and explain unusual or complex terminology. Don't assume the judging panel will know about your work. It might be helpful to use the STAR (Situation, Task, Action, Result) technique when writing your nomination statement.
 
 ### Write for a senior audience
 
