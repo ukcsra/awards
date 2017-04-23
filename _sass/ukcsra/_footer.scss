@@ -25,10 +25,10 @@ footer {
 				font-size: 			1.2rem;
 				text-decoration: 	none;
 
-				@include text-outline($body-inverse-color, $body-inverse-color, transparent, transparent, 2px);
-				
+				@include text-outline($body-inverse-color, $body-inverse-color, transparent, transparent, 1px);
+
 				border: 			1px solid $footer-color;
-				
+
 				font-weight: 		600;
 
 				&:hover, &:focus {
@@ -44,7 +44,7 @@ footer {
 			}
 
 		}
-		
+
 		@supports (-ms-ime-align:auto) {
 			a.footer-brand {
 				-webkit-text-stroke: none;
