@@ -16,11 +16,11 @@ image-2x-path: "/img/@2x"
 # Timelines:
 nominations: "open" # choose "open", "closed" or "ended"
 nominations-open: "2017-04-24 00:00"
-nominations-close: "2017-05-25 23:59"
+nominations-close: "2017-06-16 23:59"
 
 shortlists: false # choose true or false
-shortlist-starts: "2017-06-01 00:00"
-shortlist-closes: "2017-08-01 23:59"
+shortlist-starts: "2017-08-01 00:00"
+shortlist-closes: "2017-09-01 23:59"
 
 publish: false # choose true or false
 publish-date: "2017-10-01 00:00" # date we publish the full index
