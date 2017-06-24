@@ -14,7 +14,7 @@ image-path: "/img"
 image-2x-path: "/img/@2x"
 
 # Timelines:
-nominations: "open" # choose "open", "closed" or "ended"
+nominations: "closed" # choose "open", "closed" or "ended"
 nominations-open: "2017-04-24 00:00"
 nominations-close: "2017-06-16 23:59"
 
